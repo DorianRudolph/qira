@@ -1,0 +1,5 @@
+[submodule "tracers/qemu/qemu"]
+	path = tracers/qemu/qemu
+	url = https://github.com/DorianRudolph/qemu.git
+[submodule "qira"]
+	branch = qira
