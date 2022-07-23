@@ -4,7 +4,10 @@
 if [ $(which apt-get) ]; then
   echo "installing deps for ubuntu"
   sudo apt-get -y install git curl python python-dev python3-pip build-essential pkg-config zlib1g-dev libglib2.0-dev libpixman-1-dev
-  sudo pip3 install virtualenv 
+  # install pip2
+  curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+  sudo python2 get-pip.py
+  sudo pip2 install virtualenv 
  
 else
   echo "*** You'll need to install Ubuntu or get a working build env for qemu and python yourself ***"
